@@ -1,0 +1,191 @@
+/* AddTeacher.module.css */
+.register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.registerForm {
+    width: 100%;
+    max-width: 800px;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.registerTitle {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.registerInput {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.registerInput:focus {
+    outline: none;
+    border-color: #3f51b5;
+    box-shadow: 0 0 0 2px rgba(63, 81, 181, 0.2);
+}
+
+.registerButton {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.registerButton:hover {
+    background-color: #303f9f;
+}
+
+.registerButton:disabled {
+    background-color: #9fa8da;
+    cursor: not-allowed;
+}
+
+.formSection {
+    margin: 2rem 0;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 1.5rem;
+}
+
+.formSection:first-of-type {
+    border-top: none;
+    margin-top: 0;
+}
+
+.sectionHeading {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #3f51b5;
+}
+
+.imageSection {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.imagePreview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.removeImageBtn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    transition: background-color 0.3s;
+}
+
+.removeImageBtn:hover {
+    background-color: #d32f2f;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #555;
+}
+
+textarea.registerInput {
+    min-height: 100px;
+    resize: vertical;
+}
+
+select.registerInput {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1rem;
+}
+.passwordWrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.passwordInput {
+  width: 100%;
+  padding-right: 40px; /* leave space for the icon */
+}
+
+.toggleIcon {
+  position: absolute;
+  right: 10px;        /* distance from right edge */
+  top: 43%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.capitalizeInput {
+  text-transform: capitalize;
+}
+
+
+.passwordContainer {
+    position: relative;
+    width: 100%;
+}
+
+.passwordToggle {
+    position: absolute;
+    right: 10px;
+    top: 38%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    transition: color 0.2s ease;
+}
+
+.passwordToggle:hover {
+    color: #333;
+}
+
+.passwordToggle:focus {
+    outline-offset: 1px;
+    border-radius: 4px;
+}
+
+/* Ensure the password input has right padding to accommodate the icon */
+.passwordContainer .registerInput {
+    padding-right: 40px;
+    width: 100%;
+}
